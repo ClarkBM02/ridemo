@@ -1,0 +1,27 @@
+<h1>Listing users</h1>
+
+<table class='usersTable'>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Tag Id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.first %></td>
+    <td><%= user.last %></td>
+    <td><%= user.tagID %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+  <%= link_to 'Back', '/system_entry/useroptions' %>

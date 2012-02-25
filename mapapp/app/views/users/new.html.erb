@@ -1,0 +1,41 @@
+ <%= stylesheet_link_tag 'style', :media => 'screen' %> <script type="text/javascript" src="public/javascripts/jquery-1.4.js"></script>
+    <script type="text/javascript">
+     $( function startup(){
+         $('div.city').hide();
+    $('div.latlong').hide();
+    $('div.street').hide();
+    $('div.ip').hide();
+     $('input[type=radio]#city').bind('click', function(){
+         $('div.city').show();
+         $('div.street').hide();
+         $('div.ip').hide();
+         $('div.latlong').hide();
+
+     });
+         $('input[type=radio]#street').bind('click', function(){
+         $('div.city').show();
+         $('div.street').show();
+         $('div.ip').hide();
+         $('div.latlong').hide();
+     });
+         $('input[type=radio]#ip').bind('click', function(){
+         $('div.city').hide();
+         $('div.street').hide();
+         $('div.ip').show();
+         $('div.latlong').hide();
+     });
+            $('input[type=radio]#latlong').bind('click', function(){
+         $('div.city').hide();
+         $('div.street').hide();
+         $('div.ip').hide();
+         $('div.latlong').show();
+     });
+     });
+    </script>
+
+
+<h1>New user</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', '/system_entry/useroptions' %>

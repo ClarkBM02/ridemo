@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+
+  <b>Map App</b><br/>
+
+<%= @res1.lat %>
+<%= @res1.lng %>
+  <ul>
+ <li><%= if session[:uid] != nil
+     link_to 'Edit my Info', '/users/' + session[:uid] + '/edit'
+     else
+           link_to 'Register', '/users/new'
+ end%>               </li>
+  <li><%= link_to 'View Map', '/system_entry/map' %>  </li>
+ <li> <%= link_to 'View Users', '/users' %>     </li>
+      </ul>
+</p>

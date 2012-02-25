@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first: MyString
+  last: MyString
+  longitude: 
+  latitude: 
+  address: MyString
+  city: MyString
+  region: MyString
+  postalCode: MyString
+  country: MyString
+  ipaddress: MyString
+  tagID: MyString
+
+two:
+  first: MyString
+  last: MyString
+  longitude: 
+  latitude: 
+  address: MyString
+  city: MyString
+  region: MyString
+  postalCode: MyString
+  country: MyString
+  ipaddress: MyString
+  tagID: MyString

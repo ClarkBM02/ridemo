@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First:</b>
+  <%= @user.first %>
+</p>
+
+<p>
+  <b>Last:</b>
+  <%= @user.last %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @user.longitude %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @user.latitude %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @user.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @user.city %>
+</p>
+
+<p>
+  <b>Region:</b>
+  <%= @user.region %>
+</p>
+
+<p>
+  <b>Postalcode:</b>
+  <%= @user.postalCode %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @user.country %>
+</p>
+
+<p>
+  <b>Ipaddress:</b>
+  <%= @user.ipaddress %>
+</p>
+
+<p>
+  <b>Tagid:</b>
+  <%= @user.tagID %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
